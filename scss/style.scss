@@ -1,0 +1,10 @@
+@import "variable";
+@import "function";
+@import "mixin";
+@import "reset";
+@import "space";
+@import "content1";
+
+// import 순서
+// 추상적인 파일 = 변수 function mix
+// 컴파일된 파일 = reset typography 컴포넌트정의 페이지정의 레이아웃정의 등등
