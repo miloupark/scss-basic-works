@@ -2,5 +2,15 @@
   "scripts": {
     "dev": "sass scss:css --watch",
     "build": "sass scss:build --style=compressed --no-source-map"
+  },
+  "name": "scss-basic-works",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.8"
   }
 }
