@@ -9,7 +9,7 @@ $blue: #005bac;
 }
 .text-type1 {
   @include text($blue, rem(16), null, rem(24), null);
-  // 폰트사이즈 400, 폰트웨이트 normal은 기본이면 null로 작성해주면 됨
+  // fontsize 400, fontweight normal은 기본, null로 작성
 }
 .text-type2 {
   @include text($gray77, rem(14), null, rem(22), rem(-0.5));

@@ -1,0 +1,59 @@
+$gray33: #333333;
+$gray99: #999999;
+$gray77: #777777;
+$graybd: #bdbdbd;
+$graybe: #bebebe;
+$whitef1: #f1f1f1;
+$whitee1: #e1e1e1;
+$white: #ffffff;
+$blue: #94c0e9;
+$blue00: #005bac;
+
+.footer-type1 {
+  @include text($gray77, rem(14), null, rem(14), rem(-0.5));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(20);
+  background: $white;
+  padding: rem(42) rem(20);
+  border-top: rem(2) solid $blue00;
+  .footer-type1-sns {
+    display: flex;
+    gap: rem(12);
+  }
+  .footer-type1-info {
+    text-align: center;
+    &__address {
+      line-height: rem(24);
+    }
+    &__biznumber {
+      line-height: rem(12);
+    }
+  }
+  .footer-type1-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    .footer-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: rem(14);
+      gap: rem(4);
+      border: 1px solid $whitef1;
+      &__text {
+        @include text($gray33, rem(14), 500, rem(14), rem(-0.5));
+      }
+    }
+    &__item1 {
+      grid-column: 1 / 2;
+    }
+    &__item2 {
+      grid-column: 2 / 3;
+    }
+  }
+  .footer-copyright {
+    @include text($graybe, rem(12), null, null, null);
+  }
+}

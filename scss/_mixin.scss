@@ -48,3 +48,9 @@
   line-height: $lineHeight;
   letter-spacing: $letterSpacing;
 }
+
+@mixin text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

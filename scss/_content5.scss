@@ -1,0 +1,33 @@
+$gray33: #333333;
+$gray99: #999999;
+$gray77: #777777;
+$graybd: #bdbdbd;
+$whitef1: #f1f1f1;
+$white: #ffffff;
+$blue: #94c0e9;
+$blue00: #005bac;
+
+.program-content {
+  padding: rem(24);
+  border: rem(4) solid $blue00;
+  &__title {
+    @include text($gray33, rem(24), 400, rem(32), rem(1));
+  }
+  &__subtitle {
+    @include text($gray33, rem(18), 400, rem(24), rem(-0.5));
+  }
+  .program-content-list {
+    @include text($blue, rem(14), 700, rem(20), rem(-0.5));
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+  }
+  .file-download {
+    display: flex;
+    justify-content: space-between;
+    padding: rem(12) rem(20);
+    border-radius: rem(24);
+    border: rem(1) solid $blue;
+    @include background("ico_download.svg", right rem(20) center);
+  }
+}

@@ -1,0 +1,34 @@
+$gray33: #333333;
+$gray99: #999999;
+$gray77: #777777;
+$graybd: #bdbdbd;
+$whitef1: #f1f1f1;
+$whitee1: #e1e1e1;
+$white: #ffffff;
+$blue: #94c0e9;
+$blue00: #005bac;
+
+.news-content6 {
+  display: flex;
+  flex-direction: column;
+  padding: rem(27);
+  &__main {
+    padding-bottom: rem(60);
+    img {
+      width: 100%;
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding: rem(47) rem(93);
+    border: rem(1) solid $whitee1;
+  }
+  &__title {
+    @include text($gray33, rem(24), 900, rem(24), rem(-0.5));
+    padding: rem(20) 0 rem(16);
+  }
+  &__content {
+    @include text($gray33, rem(16), null, null, null);
+  }
+}

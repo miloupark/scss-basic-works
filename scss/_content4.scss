@@ -1,0 +1,61 @@
+$gray33: #333333;
+$gray99: #999999;
+$gray77: #777777;
+$graybd: #bdbdbd;
+$whitef1: #f1f1f1;
+$white: #ffffff;
+$blue: #94c0e9;
+$blue00: #005bac;
+
+.table-type1 {
+  .table-type1-list {
+    @include text($gray77, rem(16), null, rem(24), null);
+    display: grid;
+    grid-template-columns: 1fr repeat(2, rem(200));
+    li {
+      padding: rem(24);
+    }
+    &__item1 {
+      @include text($gray33, rem(16), 700, rem(24), null);
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      text-align: center;
+      border-top: rem(2) solid $blue00;
+      border-bottom: rem(1) solid $blue00;
+    }
+    &__item4 {
+      @include text($gray33, rem(16), 700, rem(24), null);
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      width: 200px;
+      text-align: center;
+      border-top: rem(2) solid $blue00;
+      border-bottom: rem(1) solid $blue00;
+    }
+    &__item5 {
+      grid-column: 2 / 3;
+      grid-row: 2 / 4;
+      display: flex;
+      width: 200px;
+      align-items: center;
+    }
+    &__item6 {
+      @include text($gray33, rem(16), 700, rem(24), null);
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+      width: 200px;
+      text-align: center;
+      border-top: rem(2) solid $blue00;
+      border-bottom: rem(1) solid $blue00;
+    }
+    &__item7 {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+      display: flex;
+      width: 200px;
+      align-items: center;
+    }
+  }
+}
+
+// text($color, $fontSize, $fontWeight, $lineHeight, $letterSpacing)

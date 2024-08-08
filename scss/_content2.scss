@@ -1,0 +1,29 @@
+$blue: #94c0e9;
+$gray99: #999999;
+$gray33: #333333;
+$whitef1: #f1f1f1;
+$white: #ffffff;
+
+.board-item-type1 {
+  @include text($gray99, rem(14), null, rem(22), rem(-0.5));
+  display: grid;
+  gap: rem(4);
+  padding: rem(20) 0;
+  border-bottom: rem(1) solid $whitef1;
+  background: $white;
+}
+
+.text-type3 {
+  @include text($gray33, rem(14), 700, rem(20), rem(-0.5));
+  @include text-ellipsis;
+  grid-column: 1 / -1;
+}
+.borad-item-info {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  &__mail {
+    width: rem(18);
+    height: rem(14);
+  }
+}

@@ -1,4 +1,4 @@
-$mt: 20, 30;
+$mt: 20, 30, 40;
 
 @each $item in $mt {
   .mt#{$item} {
